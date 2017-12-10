@@ -2,7 +2,7 @@ const express = require('express');
 //express() 是一个由 express 模块导出的入口（top-level）函数。
 const app = express();
 
-var handlebars = require('express-handlebars')
+let handlebars = require('express-handlebars')
   .create({defaultLayout: 'main'});
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
