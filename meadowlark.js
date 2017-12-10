@@ -3,7 +3,21 @@ const express = require('express');
 const app = express();
 
 app.set('port', process.env.PORT || 3000);
+//主页
+  app.get('/', (req, res) => {
+    res.type('text/plain');
+    res.send('Meadowlark Travel');
+    console.log(typeof app.locals);//object
 
+  });
+//about
+  app.get('/about', (req, res) => {
+    res.type('text/plain');
+    res.send('About Meadowlark Travel');
+  });
+
+//404 500的定制要放在后面
+//通配符*可能会导致某些路径永远无法匹配
 //定制404页面
 app.use((req, res) => {
   res.type('text/plain');
