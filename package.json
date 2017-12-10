@@ -1,0 +1,26 @@
+{
+  "name": "meadowlark",
+  "version": "1.0.0",
+  "description": "express proj",
+  "main": "meadowlark.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Angelki/meadowlark.git"
+  },
+  "keywords": [
+    "express",
+    "node"
+  ],
+  "author": "angelki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Angelki/meadowlark/issues"
+  },
+  "homepage": "https://github.com/Angelki/meadowlark#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
